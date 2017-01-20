@@ -2,7 +2,7 @@
 
 ##声明与引用
 
-变量定义： `--*` (*表示自定义的变量字符)
+变量定义： `--*`
 变量使用： `var(--*)`
 
 ```
@@ -32,7 +32,7 @@ CSS变量的使用一定要在声明块{}里面，同时{}也是变量的作用�
 ```
 --initFontSize: 30px; // 错误，不能在{}外
 h1 {
-    font-size: var(--initFontSize) // 返回浏览器默认的h1字体大小
+    font-size: var(--initFontSize) // 返回浏览器默认值
 }
 ```
 
@@ -41,7 +41,7 @@ h1 {
     --initFontSize: 30px; // 作用域只在h1
 }
 h2 {
-    font-size: var(--initFontSize) // 错误，h2返回浏览器默认的h2字体大小
+    font-size: var(--initFontSize) // 错误，返回浏览器默认值
 }
 ```
 
@@ -58,6 +58,6 @@ div {
 ```
 div {
   --color: 30px;
-  background-color: var(--color, #eee); // 不合法，返回浏览器默认值transparent
+  background-color: var(--color, #eee); // 不合法，返回浏览器默认值
 }
 ```
