@@ -2,4 +2,4 @@
 
 ## catalog
 
-* [how to get css value(JS)]('./notes/how to get css value(JS).md')
+* [how to get css value(JS)](./notes/how to get css value(JS).md)
