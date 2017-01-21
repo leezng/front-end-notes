@@ -2,5 +2,5 @@
 
 ## catalog
 
-* [how to get css value(JS)](./notes/how to get css value(JS).md)
-* [css variables](./notes/css-variables.md)
+* [how to get css value(JS) - 原生JS获取样式的方法](./notes/how to get css value(JS).md)
+* [css variables(CSS4) - CSS变量](./notes/css-variables.md)
