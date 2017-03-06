@@ -19,11 +19,13 @@
 }
 ```
 
+```html
 <div class="box box-1">
     <div class="left"></div>
     <div class="right"></div>
     <div class="center"></div>
 </div>
+```
 
 ## 利用 float 实现 中间优先渲染 (圣杯布局)
 
@@ -47,11 +49,13 @@
 }
 ```
 
+```html
 <div class="box box-2">
     <div class="center"></div>
     <div class="left"></div>
     <div class="right"></div>
 </div>
+```
 
 ## 利用 absolute 实现
 
@@ -79,11 +83,13 @@
 }
 ```
 
+```html
 <div class="box box-3">
     <div class="left"></div>
     <div class="center"></div>
     <div class="right"></div>
 </div>
+```
 
 ## 利用 table 实现
 
@@ -104,11 +110,13 @@
 }
 ```
 
+```html
 <div class="box box-4">
     <div class="left"></div>
     <div class="center"></div>
     <div class="right"></div>
 </div>
+```
 
 ## 利用 flex 实现
 
@@ -127,12 +135,15 @@
 }
 ```
 
+```html
 <div class="box box-5">
     <div class="left"></div>
     <div class="center"></div>
     <div class="right"></div>
 </div>
+```
 
+```html
 <style type="text/css">
     body { font-family: "Microsoft Yahei"; }
     pre { font-family: "Consolas"; }
@@ -165,3 +176,4 @@
     .box-5 .center { flex: 1; }
     .box-5 .right { width: 100px; }
 </style>
+```
