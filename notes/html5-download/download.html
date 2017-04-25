@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <button id="btn-1">
+    <a href="./README.md" download>button-1</a>
+  </button>
+  <button id="btn-2">button-2</button>
+</head>
+<body>
+  
+</body>
+  <script>
+    // http://www.alloyteam.com/2014/01/use-js-file-download/
+    // http://javascript.ruanyifeng.com/htmlapi/file.html
+    // 
+    // function downloadFile(aLink, fileName, content){
+    //   aLink.download = fileName;
+    //   aLink.href = "data:text/plain," + content;
+    // }
+    var arr = []
+    for (var i = 0; i < 100; i++) {
+      arr.push(new Date())
+    }
+    var data = JSON.stringify(arr)
+
+    document.getElementById('btn-2').addEventListener('click', download('test.json', data))
+
+    var download = (fileName, content) => {
+      var link = document.createElement('a')
+      var blob = new Blob([content])
+      link.download = fileName
+      link.href = URL.createObjectURL(blob)
+      link.click()
+      URL.revokeObjectURL(link)
+    }   
+  </script>
+</html>
