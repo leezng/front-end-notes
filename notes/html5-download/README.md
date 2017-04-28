@@ -69,9 +69,9 @@ var downloadFile = (fileName, content) => {
 
 ## 参考资料
 
-* [](http://stackoverflow.com/questions/19327749/javascript-blob-filename-without-link)
-* [](http://www.alloyteam.com/2014/01/use-js-file-download/)
-* [](http://javascript.ruanyifeng.com/htmlapi/file.html)
-* [](http://www.zhangxinxu.com/wordpress/2013/10/understand-domstring-document-formdata-blob-file-arraybuffer/)
-* [](https://developer.mozilla.org/zh-CN/docs/Web/API/URL/createObjectURL)
-* [](https://developer.mozilla.org/zh-CN/docs/Web/API/Blob)
+* [http://stackoverflow.com/questions/19327749/javascript-blob-filename-without-link](http://stackoverflow.com/questions/19327749/javascript-blob-filename-without-link)
+* [http://www.alloyteam.com/2014/01/use-js-file-download/](http://www.alloyteam.com/2014/01/use-js-file-download/)
+* [http://javascript.ruanyifeng.com/htmlapi/file.html](http://javascript.ruanyifeng.com/htmlapi/file.html)
+* [http://www.zhangxinxu.com/wordpress/2013/10/understand-domstring-document-formdata-blob-file-arraybuffer/](http://www.zhangxinxu.com/wordpress/2013/10/understand-domstring-document-formdata-blob-file-arraybuffer/)
+* [https://developer.mozilla.org/zh-CN/docs/Web/API/URL/createObjectURL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL/createObjectURL)
+* [https://developer.mozilla.org/zh-CN/docs/Web/API/Blob](https://developer.mozilla.org/zh-CN/docs/Web/API/Blob)
