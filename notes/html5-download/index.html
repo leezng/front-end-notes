@@ -13,21 +13,26 @@
 </body>
   <script>
     // http://www.alloyteam.com/2014/01/use-js-file-download/
+    // https://scarletsky.github.io/2016/07/03/download-file-using-javascript/#限制一：不同浏览器对-blob-对象有不同的限制
     // http://javascript.ruanyifeng.com/htmlapi/file.html
-    // 
-    // function downloadFile(aLink, fileName, content){
-    //   aLink.download = fileName;
-    //   aLink.href = "data:text/plain," + content;
-    // }
+    // http://www.cnblogs.com/wgw8299/archive/2011/02/06/1949453.html
+    
+    function downloadFile(aLink, fileName, content){
+      aLink.download = fileName;
+      aLink.href = 'data:text/plain,' + content;
+    }
+
     var arr = []
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < 1000; i++) {
       arr.push(new Date())
     }
     var data = JSON.stringify(arr)
 
-    document.getElementById('btn-2').addEventListener('click', download('test.json', data))
+    document.getElementById('btn-2').addEventListener('click', () => {
+      download('test.json', data)
+    })
 
-    var download = (fileName, content) => {
+    function download (fileName, content) {
       var link = document.createElement('a')
       var blob = new Blob([content])
       link.download = fileName
