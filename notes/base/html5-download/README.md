@@ -14,8 +14,8 @@
 
 ```js
 var downloadFile = (element, fileName, content) => {
-    element.download = fileName
-    element.href = "data:text/plain," + content
+  element.download = fileName
+  element.href = "data:text/plain," + content
 }
 
 element.addEventListener('click', downloadFile(arguments))
@@ -50,12 +50,12 @@ data:image/x-icon; base64, base64 编码的 icon 图片数据
 
 ```js
 var downloadFile = (fileName, content) => {
-    var link = document.createElement('a')
-    var blob = new Blob([content])
-    link.download = fileName
-    link.href = URL.createObjectURL(blob)
-    link.click()
-    URL.revokeObjectURL(link) // 这个 URL 的生命周期和创建它的窗口中的 document 绑定, 浏览器会在文档退出的时候自动释放它们，但为了获得最佳性能和内存使用，你应该在安全的时机主动释放掉它们
+  var link = document.createElement('a')
+  var blob = new Blob([content])
+  link.download = fileName
+  link.href = URL.createObjectURL(blob)
+  link.click()
+  URL.revokeObjectURL(link) // 这个 URL 的生命周期和创建它的窗口中的 document 绑定, 浏览器会在文档退出的时候自动释放它们，但为了获得最佳性能和内存使用，你应该在安全的时机主动释放掉它们
 } 
 ```
 
