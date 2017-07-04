@@ -101,7 +101,7 @@ arr.sort((a, b) => a.number - b.number)
 通过运行上述两个例子发现, example1 在不同浏览器上运行结果是一致的, 但 example2 在 Chrome 上出现了不同的情况。
 
 || Chrome || Firefox ||
-| ---- |
+| ---- | ---- | ---- | ---- | ---- |
 | (index) | number | name | number | name |
 | 0 | 1 | "k" | 1 | "g" |
 | 1 | 1 | "g" | 1 | "k" |
@@ -141,6 +141,6 @@ function QuickSort(a, from, to) {
 
 ## 参考资料
 
-<https://github.com/v8/v8/blob/master/src/js/array.js#L755>
-<http://efe.baidu.com/blog/talk-about-sort-in-front-end/>
-<https://ruiming.me/archives/4>
+* <https://github.com/v8/v8/blob/master/src/js/array.js#L755>
+* <http://efe.baidu.com/blog/talk-about-sort-in-front-end/>
+* <https://ruiming.me/archives/4>
