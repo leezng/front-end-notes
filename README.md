@@ -6,3 +6,4 @@
 * [Css variables(CSS4) - CSS变量](./notes/base/css-variables)
 * [Left and right fixed width, intermediate adaptive layout - 左右固定中间自适应布局](./notes/base/left-and-right-fixed-width-intermediate-adaptive-layout)
 * [HTML5 download](./notes/base/html5-download)
+* [Array.prototype.sort](./notes/base/Array.prototype.sort.md)
