@@ -1,4 +1,4 @@
-## http
+# http
 
 ```js
 var http = require('http')
@@ -38,3 +38,29 @@ http.createServer(function(req, res) {
 
 }).listen(8080, "localhost")
 ```
+
+## req
+
+```js
+req.url
+req.method
+req.headers
+
+setEncoding()
+addListener()
+```
+
+### 处理POST
+
+```js
+req.on('data', (postData) => {})
+
+req.on('end', () => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.write('post ok')
+  res.end()
+})
+```
+
+`data` 事件在数据接收过程中，每收到一段数据就触发一次，接收到的数据传入回调
+`end` 事件则是在所有数据接收完成后触发

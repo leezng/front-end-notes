@@ -1,4 +1,4 @@
-## events
+# events
 
 ```js
 var events = require('events')
@@ -10,7 +10,7 @@ emitter.on('chat', () => {
 emitter.emit('chat')
 ```
 
-### 实例方法
+## 实例方法
 
 ```js
 emitter.emit(name)
@@ -35,11 +35,11 @@ emitter.prependListener(name, fn)
 emitter.prependOnceListener(name, fn)
 ```
 
-### 默认事件
+## 默认事件
 
 * newListener
 * removeListener
 
-### 特殊事件
+## 特殊事件
 
 * error
