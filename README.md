@@ -7,3 +7,5 @@
 * [Left and right fixed width, intermediate adaptive layout - 左右固定中间自适应布局](./notes/main/left-and-right-fixed-width-intermediate-adaptive-layout)
 * [HTML5 download](./notes/main/html5-download)
 * [Array.prototype.sort](./notes/main/Array.prototype.sort)
+
+ps: 本项目暂停更新，笔记更新将移至[我的website](https://leezng.github.io/) - 2017-09-05
